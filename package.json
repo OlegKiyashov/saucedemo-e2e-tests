@@ -6,6 +6,7 @@
     "test": "npx playwright test",
     "test:chromium": "npx playwright test --project=chromium",
     "test:firefox": "npx playwright test --project=firefox",
+    "test:chrome": "npx playwright test --project=chrome",
     "report": "npx playwright show-report"
   },
   "dependencies": {

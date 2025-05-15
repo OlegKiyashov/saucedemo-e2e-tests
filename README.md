@@ -2,52 +2,39 @@
 
 ## Технологии
 - Язык: JavaScript
-- Фреймворк: Playwright
-- Подход: Page Object Model
+- Фреймворк: [Playwright](https://playwright.dev/)
+- Подход: Page Object Model (POM)
+- Браузеры: Chromium, Firefox, Google Chrome
 
 ## Установка
-1. Установите зависимости:
-   ```bash
-   npm install
-   npx playwright install
-   ```
+1. Установить [репазиторий](https://github.com/OlegKiyashov/saucedemo-e2e-tests.git)
+2. Установить зависимости:
+- `npm install`
+- `npx playwright install`
+   
+3. Запуск тестов во всех браузерах - `npm test`
 
-2. Запуск тестов во всех браузерах:
-   ```bash
-   npm test
-   ```
+4. Запуск тестов только в Chromium - `npm run test:chromium`
 
-3. Запуск тестов только в Chromium:
-   ```bash
-   npm run test:chromium
-   ```
+5. Запуск тестов только в Firefox - `npm run test:firefox`
 
-4. Запуск тестов только в Firefox:
-   ```bash
-   npm run test:firefox
-   ```
+6. Запуск тестов только в Chrome - `npm run test:chrome`
 
-5. Просмотр в режиме UI:
-   ```bash
-   npx playwright test --ui
-   ```
+7. Просмотр в режиме UI - `npx playwright test --ui`
 
-## Просмотр отчета
-6. После выполнения тестов:
-   ```bash
-   npm run report
-   ```
+## Открытие отчета
+8. После выполнения тестов - `npm run report`
 
 ## Структура
 - `pages/` — Page Object классы
-- `tests/` — тесты
-- `playwright.config.js/` — конфиг
-- `package.json`
-- `README.md`
+- `tests/` — Файлы с тестами
+- `playwright.config.js/` — Конфигурация Playwright
+- `package.json` - Скрипты и зависимости проекта
+- `README.md` - Документация проекта
 
 ## Кейсы
 - Успешная авторизация
-- Неверный пароль
-- Добавление товара
-- Удаление товара
-- Оплата и завершение заказа
+- Авторизация с неверным паролем
+- Добавление товара в корзину
+- Удаление товара из корзины
+- Завершение оформления заказа
