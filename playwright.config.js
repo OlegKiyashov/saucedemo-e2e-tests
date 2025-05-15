@@ -1,4 +1,3 @@
-// playwright.config.js
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
@@ -22,6 +21,13 @@ export default defineConfig({
     {
       name: 'Firefox',
       use: { browserName: 'firefox' },
+    },
+    {
+      name: 'Chrome',
+      use: {
+        browserName: 'chromium',
+        channel: 'chrome',
+      },
     }
     // WebKit (Safari) отключён из-за несовместимости с macOS 11
   ],
