@@ -9,22 +9,41 @@
 1. Установите зависимости:
    ```bash
    npm install
+   npx playwright install
    ```
 
-2. Запуск тестов:
+2. Запуск тестов во всех браузерах:
    ```bash
-   npx playwright test
+   npm test
    ```
 
-3. Просмотр в режиме UI:
+3. Запуск тестов только в Chromium:
+   ```bash
+   npm run test:chromium
+   ```
+
+4. Запуск тестов только в Firefox:
+   ```bash
+   npm run test:firefox
+   ```
+
+5. Просмотр в режиме UI:
    ```bash
    npx playwright test --ui
+   ```
+
+## Просмотр отчета
+6. После выполнения тестов:
+   ```bash
+   npm run report
    ```
 
 ## Структура
 - `pages/` — Page Object классы
 - `tests/` — тесты
 - `playwright.config.js/` — конфиг
+- `package.json`
+- `README.md`
 
 ## Кейсы
 - Успешная авторизация
