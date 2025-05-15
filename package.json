@@ -1,4 +1,13 @@
 {
+  "name": "saucedemo-e2e-tests",
+  "version": "1.0.0",
+  "description": "Автоматизированные E2E тесты для сайта saucedemo.com с использованием Playwright",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "report": "npx playwright show-report"
+  },
   "dependencies": {
     "playwright": "^1.52.0"
   },
